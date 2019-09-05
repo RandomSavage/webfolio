@@ -1,2 +1,2 @@
 # webfolio 
-Working on a web developer portfolio for feelance and job aquisitions.
+Working on a web developer portfolio for freelance and job aquisitions.
