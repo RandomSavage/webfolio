@@ -1,8 +1,8 @@
-@import "reset.css";
+@import "./reset.css";
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext');
-@import "/top-section.css";
-@import "/services.css";
-@import "/portfolio-section.css";
+@import "./top-section.css";
+@import "./services.css";
+@import "./portfolio-section.css";
 body{
   background: #eeee;
 }
