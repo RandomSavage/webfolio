@@ -1,0 +1,194 @@
+#testimonial{
+  padding: 80px 15px;
+}
+#testimonial .container{
+  padding: 100px 0;
+}
+#testimonial .container .title{
+  font-size: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  letter-spacing: 4px;
+}
+#testimonial .container .title .square{
+  position: absolute;
+  top: 23;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(103,103,103,.5);
+}
+#testimonial .container .title h1{
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+}
+
+#testimonial .container .testimonial-container{
+  display: grid;
+  grid-template-columns: 12% 76% 12%;
+  grid-gap: 15px;
+}
+#testimonial .container .testimonial-container .test-sides{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#testimonial .container .testimonial-container .test-sides .test-left{
+  height: 80%;
+  width: 100%;
+}
+#testimonial .container .testimonial-container .test-sides .person-img{
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: #f2f3f5 !important;
+  height: 80%;
+  width: 100%;
+}
+#testimonial .container .testimonial-container .test-sides .person-img .hover-bg{
+  background: rgba(255,53,53,0);
+  height: 100%;
+  width: 100%;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+#testimonial .container .testimonial-container .test-sides:hover .person-img .hover-bg{
+  background: rgba(255,53,53,.8);
+  height: 100%;
+  width: 100%;
+}
+#testimonial .container .testimonial-container .test-sides .person-img .hover-bg .name{
+  color: #ffff;
+  font-weight: 700;
+  font-size: 2rem;
+  transition: all .2s ease-in-out .2s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0,50px,0);
+  opacity: 0;
+}
+#testimonial .container .testimonial-container .test-sides:hover .person-img .hover-bg .name{
+  color: #ffff;
+  font-weight: 700;
+  font-size: 2rem;
+  transition: all .2s ease-in-out .1s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform: translate3d(0,0,0);
+  opacity: 1;
+}
+
+#testimonial .container .testimonial-container .test-center{
+  background: #ffff;
+  padding: 60px;
+  -webkit-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);
+ -moz-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);
+  box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);
+}
+#testimonial .container .testimonial-container .test-center .header{
+  display: flex;
+  padding-bottom: 50px;
+}
+#testimonial .container .testimonial-container .test-center .header .user-img{
+  width: 150px;
+  height: 150px;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-color: #f2f3f5 !important;
+}
+#testimonial .container .testimonial-container .test-center .header .user-img img{
+  width: 100px;
+}
+#testimonial .container .testimonial-container .test-center .header .info{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 40px;
+}
+#testimonial .container .testimonial-container .test-center .header .info h4{
+  color: #13161d;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+#testimonial .container .testimonial-container .test-center .header .info span{
+  color: #929294;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#testimonial .container .testimonial-container .test-center p{
+  color: #929294;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.7;
+}
+
+#testimonial .container .testimonial-container .test-sides .test-right{
+  height: 80%;
+  width: 100%;
+}
+#testimonial .container .testimonial-container .test-sides .test-right .name{
+
+}
+#testimonial .container .testimonial-container .test-sides .test-right .hover-bg{
+}
+
+/*Tablet*/
+@media only screen and (max-width: 960px){
+  #testimonial .container .testimonial-container {
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-gap: 0px;
+    padding: 100px 0;
+}
+}
+/*phones*/
+@media only screen and (max-width: 767px){
+  #testimonial .container .testimonial-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 0px;
+    padding: 100px 0;
+  }
+#testimonial .container .testimonial-container .test-sides.test-left{
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+}
+#testimonial .container .testimonial-container .test-sides.test-right{
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+}
+#testimonial .container .testimonial-container .test-sides.test-right .person-img{
+  background-position: top left !important;
+}
+#testimonial .container .testimonial-container .test-center{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  padding: 20px;
+}
+#testimonial .container .testimonial-container .test-center p{
+  font-size: 1rem;
+}
+}
