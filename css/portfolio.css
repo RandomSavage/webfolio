@@ -1,13 +1,13 @@
-@import "/reset.css";
+@import "./reset.css";
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext');
-@import "/landing-page/top-section.css";
-@import "/landing-page/services.css";
-@import "/landing-page/portfolio-section.css";
-@import "/landing-page/experience-section.css";
-@import "/landing-page/blog.css";
-@import "/landing-page/classTestimonials.css";
-@import "/portfolio/portfolio-projects.css";
-@import "/footer.css";
+@import "./landing-page/top-section.css";
+@import "./landing-page/services.css";
+@import "./landing-page/portfolio-section.css";
+@import "./landing-page/experience-section.css";
+@import "./landing-page/blog.css";
+@import "./landing-page/classTestimonials.css";
+@import "./portfolio/portfolio-projects.css";
+@import "./footer.css";
 
 body{
   background: #ffff;
