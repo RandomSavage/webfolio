@@ -1,0 +1,2083 @@
+[33mcommit 3d4f26ac39d1db83b269ae6bea82009407158c86[m[33m ([m[1;32mmaster[m[33m)[m
+Author: RandomSavage <randomsavage77@gmail.com>
+Date:   Sat Sep 14 21:45:57 2019 -0400
+
+    changed files structure and updated site
+
+[1mdiff --git a/alts/portfolio.html b/alts/portfolio.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..68ae67a[m
+[1m--- /dev/null[m
+[1m+++ b/alts/portfolio.html[m
+[36m@@ -0,0 +1,324 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="utf-8">[m
+[32m+[m[32m  <title>RandomSavage</title>[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, initial-scale=1">[m
+[32m+[m[32m  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">[m
+[32m+[m[32m  <link rel="stylesheet" href="css/portfolio.css">[m
+[32m+[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m[32m  <section id="top">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="info">[m
+[32m+[m[32m        <div class="blue-square">[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <h1>Random Savage</h1>[m
+[32m+[m[32m        <p>Freelance Web Developer</p>[m
+[32m+[m[32m        <a href="https://github.com/RandomSavage">Latest Works</a>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="img">[m
+[32m+[m[32m        <div class="background-img"></div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="services">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="circle"></div>[m
+[32m+[m[32m        <h1>Services</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="services-container">[m
+[32m+[m[32m        <div class="box blue">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-trophy" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>Best Quality</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="box red">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-fighter-jet" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>Fast Delivery</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="box orange">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-handshake-o" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>User Friendly Design</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="portfolio-section">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="square"></div>[m
+[32m+[m[32m        <h1>Portfolio</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="portfolio-container">[m
+[32m+[m[32m        <a href="portfolio/#" class="box image1">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image2">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image3">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image4">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image5">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image6">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image7">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="experience">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="large-title">Experience</div>[m
+[32m+[m[32m      <div class="experience-container">[m
+[32m+[m[32m        <div class="large-icons">[m
+[32m+[m[32m          <div class="square">[m
+[32m+[m[32m            <div class="blue-box">[m
+[32m+[m[32m              Experience[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="circle">[m
+[32m+[m[32m            <div class="white-box">[m
+[32m+[m[32m              Awards[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="triangle">[m
+[32m+[m[32m            <div class="triangle-box">[m
+[32m+[m[32m              <div class="text">[m
+[32m+[m[32m                Work[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="info">[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m            </p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="blog">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <h1>Blog</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="blog-container">[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <div class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="testamonial">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="square"></div>[m
+[32m+[m[32m        <h1>Testamonials</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="testamonial-container">[m
+[32m+[m[32m        <a href="#" class="box t1">[m
+[32m+[m[32m          <div class="image"></div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="#" class="box t2">[m
+[32m+[m[32m          <div class="image"></div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="#" class="box t3">[m
+[32m+[m[32m          <div class="name">[m
+[32m+[m[32m            <h4>Name</h4>[m
+[32m+[m[32m            <p>Project Manager, Site Architect</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="#" class="box t4">[m
+[32m+[m[32m          <div class="image"></div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="#" class="box t5">[m
+[32m+[m[32m          <div class="paragraph">[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m</body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+[32m+[m[32mcurl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -[m
+[1mdiff --git a/alts/testamonial.css b/alts/testamonial.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6ed804b[m
+[1m--- /dev/null[m
+[1m+++ b/alts/testamonial.css[m
+[36m@@ -0,0 +1,145 @@[m
+[32m+[m[32m#testamonial{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .title{[m
+[32m+[m[32m  font-size: 2.5rem;[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  margin: 0 auto;[m
+[32m+[m[32m  width: 200px;[m
+[32m+[m[32m  height: 200px;[m
+[32m+[m[32m  letter-spacing: 4px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .title .square{[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  top: 23;[m
+[32m+[m[32m  width: 150px;[m
+[32m+[m[32m  height: 150px;[m
+[32m+[m[32m  background-color: rgba(103,103,103,.5);[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .title h1{[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  font-size: 2.5rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  color: #16171b;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr 1fr 1fr;[m
+[32m+[m[32m  grid-template-rows: 150px 150px 150px 150px 150px;[m
+[32m+[m[32m  grid-gap: 40px;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  color: #16171b;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box{[m
+[32m+[m[32m  background: #ffff;[m
+[32m+[m[32m  display: block;[m
+[32m+[m[32m  transition: all .4s ease-in-out;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  text-decoration: line-through;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  overflow: hidden;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t1{[m
+[32m+[m[32m  grid-column: 1/2;[m
+[32m+[m[32m  grid-row: 1/5;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t1 .image{[m
+[32m+[m[32m  background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.charlie-bruzzese.com%2Fwordpress%2Fwp-content%2Fuploads%2F2015%2F07%2FCouple-Loves-Coffee-by-Ed-Yourdon2.png&f=1&nofb=1');[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  background-size: cover;[m
+[32m+[m[32m  background-position: center center;[m
+[32m+[m[32m  background-repeat: no-repeat;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t2{[m
+[32m+[m[32m  grid-column: 2/3;[m
+[32m+[m[32m  grid-row: 1/2;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t2 .image{[m
+[32m+[m[32m  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fintrovertedalpha.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fhow-to-date-intelligent-women-introverted-alpha.jpg&f=1&nofb=1');[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  background-size: cover;[m
+[32m+[m[32m  background-position: center center;[m
+[32m+[m[32m  background-repeat: no-repeat;[m
+[32m+[m[32m  }[m
+[32m+[m
+[32m+[m[32m#testamonial .container .testamonial-container .t3{[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  color: #16171b;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .t4{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t4{[m
+[32m+[m[32m  grid-column: 4/5;[m
+[32m+[m[32m  grid-row: 1/5;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t4 .image{[m
+[32m+[m[32m  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cadrenderstore.com%2Fwp-content%2Fuploads%2F2018%2F01%2FCR_Work_Bobby_Standing_004.png&f=1&nofb=1');[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  background-size: cover;[m
+[32m+[m[32m  background-position: center center;[m
+[32m+[m[32m  background-repeat: no-repeat;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t5{[m
+[32m+[m[32m  grid-column: 2/4;[m
+[32m+[m[32m  grid-row: 2/5;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testamonial .container .testamonial-container .box.t5 .paragraph p{[m
+[32m+[m[32mpadding: 15px;[m
+[32m+[m[32mletter-spacing: 3px;[m
+[32m+[m[32mline-height: 1.5;[m
+[32m+[m[32mcolor: #16171b;[m
+[32m+[m[32m}[m
+[32m+[m[32m/*Tablet*/[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #testimonial .container .testimonial-container {[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 12% 76% 12%;[m
+[32m+[m[32m    grid-gap: 0px;[m
+[32m+[m[32m    padding: 100px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  #testimonial .container .testimonial-container {[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 50% 50%;[m
+[32m+[m[32m    grid-template-rows: 100px 1fr;[m
+[32m+[m[32m    grid-gap: 0px;[m
+[32m+[m[32m    padding: 100px 0;[m
+[32m+[m[32m  }[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-left{[m
+[32m+[m[32m  grid-column: 1/2;[m
+[32m+[m[32m  grid-row: 1/2;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-right{[m
+[32m+[m[32m  grid-column: 2/3;[m
+[32m+[m[32m  grid-row: 1/2;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-right .person-img{[m
+[32m+[m[32m  background-position: top left !important;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center{[m
+[32m+[m[32m  grid-column: 1/3;[m
+[32m+[m[32m  grid-row: 2/3;[m
+[32m+[m[32m  padding: 20px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center p{[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/footer.css b/css/footer.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b3db706[m
+[1m--- /dev/null[m
+[1m+++ b/css/footer.css[m
+[36m@@ -0,0 +1,42 @@[m
+[32m+[m[32mfooter{[m
+[32m+[m[32m  background: #f9fafc;[m
+[32m+[m[32m  padding: 100px 15px;[m
+[32m+[m[32m}[m
+[32m+[m[32mfooter .social-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr 1fr 1fr;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  max-width: 400px;[m
+[32m+[m[32m  margin: 0 auto;[m
+[32m+[m[32m}[m
+[32m+[m[32mfooter .social-container a{[m
+[32m+[m[32m  font-size: 3rem;[m
+[32m+[m[32m  color: #8e8f91;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  transition: all .3s ease-in-out;[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m}[m
+[32m+[m[32mfooter .social-container a:hover{[m
+[32m+[m[32m  color: rgba(255,53,53,1);[m
+[32m+[m[32m}[m
+[32m+[m[32mfooter h5{[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m  color: black;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  margin: 20px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32mfooter h6{[m
+[32m+[m[32m  font-size: .8rem;[m
+[32m+[m[32m  color: black;[m
+[32m+[m[32m  text-transform: capitalize;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/landing-page/blog.css b/css/landing-page/blog.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ce1e1e2[m
+[1m--- /dev/null[m
+[1m+++ b/css/landing-page/blog.css[m
+[36m@@ -0,0 +1,116 @@[m
+[32m+[m[32m#blog{[m
+[32m+[m[32m  padding: 100px 15px;[m
+[32m+[m[32m  background: #f9f8fc;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .title h1{[m
+[32m+[m[32mfont-size: 4rem;[m
+[32m+[m[32mfont-weight: 900;[m
+[32m+[m[32mtext-align: center;[m
+[32m+[m[32mmargin-bottom: 80px;[m
+[32m+[m[32mtext-transform: uppercase;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr 1fr;[m
+[32m+[m[32m  grid-template-rows: 588px 588px;[m
+[32m+[m[32m  grid-gap: 15px;[m
+[32m+[m[32m  overflow: hidden;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post{[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  transition: all .4s ease-in-out;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  overflow: hidden;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .post-img{[m
+[32m+[m[32mheight: 100%;[m
+[32m+[m[32mwidth: 100%;[m
+[32m+[m[32mbackground-position: center center !important;[m
+[32m+[m[32mbackground-repeat: no-repeat !important;[m
+[32m+[m[32mbackground-size: cover !important;[m
+[32m+[m[32mbackground-color: rgba(255,53,53,.8) !important;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .details{[m
+[32m+[m[32m  background: #fff;[m
+[32m+[m[32m  padding: 35px;[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  top: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  transform: translate3d(0,-200px,0);[m
+[32m+[m[32m  transition: all .4s ease-in-out;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .details h4{[m
+[32m+[m[32mfont-size: 1.1rem;[m
+[32m+[m[32mcolor: #13171a;[m
+[32m+[m[32mtext-transform: uppercase;[m
+[32m+[m[32mfont-weight: 700;[m
+[32m+[m[32mletter-spacing: 2px;[m
+[32m+[m[32mmargin-bottom: 1.8rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .details p{[m
+[32m+[m[32mfont-size: 1rem;[m
+[32m+[m[32mcolor: #919191;[m
+[32m+[m[32mfont-weight: 400;[m
+[32m+[m[32mletter-spacing: 2px;[m
+[32m+[m[32mmargin-bottom: 1.8rem;[m
+[32m+[m[32mline-height: 1.5;[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .more{[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  z-index: 3;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  bottom: 0;[m
+[32m+[m[32m  background: #fff;[m
+[32m+[m[32m  padding: 35px;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post .more .button{[m
+[32m+[m[32mfont-size: 1.3rem;[m
+[32m+[m[32mcolor: #13171a;[m
+[32m+[m[32mfont-weight: 400;[m
+[32m+[m[32mletter-spacing: 2px;[m
+[32m+[m[32mline-height: 1.5;[m
+[32m+[m[32mdisplay: inline-block;[m
+[32m+[m[32mborder-bottom: 2px solid #ff5253;[m
+[32m+[m[32mtext-transform: uppercase;[m
+[32m+[m[32mfont-weight: 700;[m
+[32m+[m[32mpadding-bottom: 10px;[m
+[32m+[m[32mtransition: all .4s ease-in-out .2s;[m
+[32m+[m[32mopacity: 0;[m
+[32m+[m[32mtransform: translate3d(0,40px,0);[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post:hover .details{[m
+[32m+[m[32mtransform: translate3d(0,-588px,0);[m
+[32m+[m[32m}[m
+[32m+[m[32m#blog .container .blog-container .post:hover .more .button{[m
+[32m+[m[32mcolor: #ff5253;[m
+[32m+[m[32mopacity: 1;[m
+[32m+[m[32mtransform: translate3d(0,0,0);[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #blog .container .blog-container{[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 1fr 1fr;[m
+[32m+[m[32m    grid-template-rows: 588px 588px 588px;[m
+[32m+[m[32m    grid-gap: 15px;[m
+[32m+[m[32m    overflow: hidden;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  #blog .container .title h1{[m
+[32m+[m[32m    font-size: 3rem;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #blog .container .blog-container{[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 1fr;[m
+[32m+[m[32m    grid-template-rows: 400px 400px 400px 400px 400px 400px;[m
+[32m+[m[32m    grid-gap: 15px;[m
+[32m+[m[32m    overflow: hidden;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/landing-page/classTestimonials.css b/css/landing-page/classTestimonials.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..c8702f0[m
+[1m--- /dev/null[m
+[1m+++ b/css/landing-page/classTestimonials.css[m
+[36m@@ -0,0 +1,194 @@[m
+[32m+[m[32m#testimonial{[m
+[32m+[m[32m  padding: 80px 15px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container{[m
+[32m+[m[32m  padding: 100px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .title{[m
+[32m+[m[32m  font-size: 2.5rem;[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  margin: 0 auto;[m
+[32m+[m[32m  width: 200px;[m
+[32m+[m[32m  height: 200px;[m
+[32m+[m[32m  letter-spacing: 4px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .title .square{[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  top: 23;[m
+[32m+[m[32m  width: 150px;[m
+[32m+[m[32m  height: 150px;[m
+[32m+[m[32m  background-color: rgba(103,103,103,.5);[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .title h1{[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  font-size: 2.5rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  color: #16171b;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#testimonial .container .testimonial-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 12% 76% 12%;[m
+[32m+[m[32m  grid-gap: 15px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides{[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .test-left{[m
+[32m+[m[32m  height: 80%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .person-img{[m
+[32m+[m[32m  background-position: center center !important;[m
+[32m+[m[32m  background-repeat: no-repeat !important;[m
+[32m+[m[32m  background-size: cover !important;[m
+[32m+[m[32m  background-color: #f2f3f5 !important;[m
+[32m+[m[32m  height: 80%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .person-img .hover-bg{[m
+[32m+[m[32m  background: rgba(255,53,53,0);[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  transition: all .2s ease-in-out;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides:hover .person-img .hover-bg{[m
+[32m+[m[32m  background: rgba(255,53,53,.8);[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .person-img .hover-bg .name{[m
+[32m+[m[32m  color: #ffff;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  font-size: 2rem;[m
+[32m+[m[32m  transition: all .2s ease-in-out .2s;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  transform: translate3d(0,50px,0);[m
+[32m+[m[32m  opacity: 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides:hover .person-img .hover-bg .name{[m
+[32m+[m[32m  color: #ffff;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  font-size: 2rem;[m
+[32m+[m[32m  transition: all .2s ease-in-out .1s;[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  transform: translate3d(0,0,0);[m
+[32m+[m[32m  opacity: 1;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center{[m
+[32m+[m[32m  background: #ffff;[m
+[32m+[m[32m  padding: 60px;[m
+[32m+[m[32m  -webkit-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[32m+[m[32m -moz-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[32m+[m[32m  box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header{[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  padding-bottom: 50px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header .user-img{[m
+[32m+[m[32m  width: 150px;[m
+[32m+[m[32m  height: 150px;[m
+[32m+[m[32m  background-position: center center !important;[m
+[32m+[m[32m  background-repeat: no-repeat !important;[m
+[32m+[m[32m  background-size: cover !important;[m
+[32m+[m[32m  background-color: #f2f3f5 !important;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header .user-img img{[m
+[32m+[m[32m  width: 100px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header .info{[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  flex-direction: column;[m
+[32m+[m[32m  padding-left: 40px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header .info h4{[m
+[32m+[m[32m  color: #13161d;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  letter-spacing: 2px;[m
+[32m+[m[32m  margin-bottom: 1rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center .header .info span{[m
+[32m+[m[32m  color: #929294;[m
+[32m+[m[32m  font-weight: 400;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  letter-spacing: 2px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center p{[m
+[32m+[m[32m  color: #929294;[m
+[32m+[m[32m  font-size: 1.4rem;[m
+[32m+[m[32m  font-weight: 400;[m
+[32m+[m[32m  letter-spacing: 2px;[m
+[32m+[m[32m  line-height: 1.7;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .test-right{[m
+[32m+[m[32m  height: 80%;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .test-right .name{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides .test-right .hover-bg{[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/*Tablet*/[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #testimonial .container .testimonial-container {[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 12% 76% 12%;[m
+[32m+[m[32m    grid-gap: 0px;[m
+[32m+[m[32m    padding: 100px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  #testimonial .container .testimonial-container {[m
+[32m+[m[32m    display: grid;[m
+[32m+[m[32m    grid-template-columns: 50% 50%;[m
+[32m+[m[32m    grid-template-rows: 100px 1fr;[m
+[32m+[m[32m    grid-gap: 0px;[m
+[32m+[m[32m    padding: 100px 0;[m
+[32m+[m[32m  }[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-left{[m
+[32m+[m[32m  grid-column: 1/2;[m
+[32m+[m[32m  grid-row: 1/2;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-right{[m
+[32m+[m[32m  grid-column: 2/3;[m
+[32m+[m[32m  grid-row: 1/2;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-sides.test-right .person-img{[m
+[32m+[m[32m  background-position: top left !important;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center{[m
+[32m+[m[32m  grid-column: 1/3;[m
+[32m+[m[32m  grid-row: 2/3;[m
+[32m+[m[32m  padding: 20px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#testimonial .container .testimonial-container .test-center p{[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/landing-page/experience-section.css b/css/landing-page/experience-section.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2380623[m
+[1m--- /dev/null[m
+[1m+++ b/css/landing-page/experience-section.css[m
+[36m@@ -0,0 +1,159 @@[m
+[32m+[m[32m#experience{[m
+[32m+[m[32m  padding: 80px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .large-title{[m
+[32m+[m[32mcolor: #c6e4ff;[m
+[32m+[m[32mfont-weight: 900;[m
+[32m+[m[32mfont-size: 4.5rem;[m
+[32m+[m[32mtext-align: center;[m
+[32m+[m[32mtext-transform: uppercase;[m
+[32m+[m[32mposition: relative;[m
+[32m+[m[32mleft: -75px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr;[m
+[32m+[m[32m  grid-gap: 10px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .square{[m
+[32m+[m[32m  border: 30px solid #52b8ff;[m
+[32m+[m[32m  padding: 5px;[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  top: -100px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .square .blue-box{[m
+[32m+[m[32m  width: 150px;[m
+[32m+[m[32m  height: 150px;[m
+[32m+[m[32m  background: #52b8ff;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  font-size: 1.1rem;[m
+[32m+[m[32m  font-weight: 600;[m
+[32m+[m[32m  letter-spacing: 3px;[m
+[32m+[m[32m  padding: 5px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .circle{[m
+[32m+[m[32m  border: 20px solid #ffc853;[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m  border-radius: 50%;[m
+[32m+[m[32m  padding: 5px;[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  top: 95px;[m
+[32m+[m[32m  left: 50px;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .white-box{[m
+[32m+[m[32m  color: #ffc853;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  border-radius: 50%;[m
+[32m+[m[32m  width: 150px;[m
+[32m+[m[32m  height: 150px;[m
+[32m+[m[32m  font-size: 1.1rem;[m
+[32m+[m[32m  font-weight: 600;[m
+[32m+[m[32m  letter-spacing: 3px;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #experience .experience-container .large-icons .triangle{[m
+[32m+[m[32m    width: 0;[m
+[32m+[m[32m    height: 0;[m
+[32m+[m[32m    border-style: solid;[m
+[32m+[m[32m    border-width: 0 150px 230px 150px;[m
+[32m+[m[32m    border-color: transparent transparent #ff5253 transparent;[m
+[32m+[m[32m    position: relative;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .triangle .triangle-box{[m
+[32m+[m[32m  width: 0;[m
+[32m+[m[32m  height: 0;[m
+[32m+[m[32m  border-style: solid;[m
+[32m+[m[32m  border-width: 0 93.75px 151.75px 93.75px;[m
+[32m+[m[32m  border-color: transparent transparent #ffffff transparent;[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  left: -94px;[m
+[32m+[m[32m  top: 49px;[m
+[32m+[m[32m  font-weight: 600;[m
+[32m+[m[32m  font-size: 1.1rem;[m
+[32m+[m[32m  letter-spacing: 3px;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  color: #ff5253;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .large-icons .triangle .triangle-box .text{[m
+[32m+[m[32m  position: relative;[m
+[32m+[m[32m  top: 98px;[m
+[32m+[m[32m  left: -29px;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#experience .experience-container .info{[m
+[32m+[m[32m  padding: 80px 0 0;[m
+[32m+[m[32m  }[m
+[32m+[m[32m#experience .experience-container .info .info-box{[m
+[32m+[m[32m    padding: 15px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .info .info-box h4{[m
+[32m+[m[32m  color: #16171c;[m
+[32m+[m[32m  font-size: 1.2rem;[m
+[32m+[m[32m  font-weight: 900;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  letter-spacing: 3px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#experience .experience-container .info .info-box .date{[m
+[32m+[m[32m  color: #52b7ff;[m
+[32m+[m[32m  font-size: .9rem;[m
+[32m+[m[32m  font-weight: 600;[m
+[32m+[m[32m  text-transform: capitalize;[m
+[32m+[m[32m  letter-spacing: 3px;[m
+[32m+[m[32m  padding: 15px 0;[m
+[32m+[m[32m  display: block;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #experience .experience-container .info .info-box p{[m
+[32m+[m[32m    color: #b2b2b4;[m
+[32m+[m[32m    font-size: 1rem;[m
+[32m+[m[32m    font-weight: 400;[m
+[32m+[m[32m    text-transform: capitalize;[m
+[32m+[m[32m    letter-spacing: 1px;[m
+[32m+[m[32m    display: block;[m
+[32m+[m[32m    line-height: 1.5;[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    @media only screen and (max-width: 960px){[m
+[32m+[m[32m      #experience .large-title{[m
+[32m+[m[32m      font-size: 3rem;[m
+[32m+[m[32m      left: 0px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container .large-icons{[m
+[32m+[m[32m        position: relative;[m
+[32m+[m[32m        top: *25px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container .large-icons .square{[m
+[32m+[m[32m        border: 30px solid #52b8ff;[m
+[32m+[m[32m        padding: 5px;[m
+[32m+[m[32m        display: inline-block;[m
+[32m+[m[32m        position: relative;[m
+[32m+[m[32m        top: 122px;[m
+[32m+[m[32m        left: 48px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[32m+[m[32m    /*phones*/[m
+[32m+[m[32m    @media only screen and (max-width: 767px){[m
+[32m+[m[32m      #experience .large-title{[m
+[32m+[m[32m      font-size: 2.5rem;[m
+[32m+[m[32m      left: 0px;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container{[m
+[32m+[m[32m        grid-template-columns: 1fr;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container .large-icons{[m
+[32m+[m[32m        display: none;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container .info .info-box h4{[m
+[32m+[m[32m        font-size: .9rem;[m
+[32m+[m[32m      }[m
+[32m+[m[32m      #experience .experience-container .info .info-box .date{[m
+[32m+[m[32m        font-size: .8rem;[m
+[32m+[m[32m      }[m
+[32m+[m[32m    }[m
+[1mdiff --git a/css/portfolio-section.css b/css/landing-page/portfolio-section.css[m
+[1msimilarity index 72%[m
+[1mrename from css/portfolio-section.css[m
+[1mrename to css/landing-page/portfolio-section.css[m
+[1mindex 913a623..2749f55 100644[m
+[1m--- a/css/portfolio-section.css[m
+[1m+++ b/css/landing-page/portfolio-section.css[m
+[36m@@ -25,7 +25,6 @@[m [mbackground-color: rgba(103,103,103,.5);[m
+   text-transform: uppercase;[m
+   font-weight: 700;[m
+   color: #16171b;[m
+[31m-[m
+ }[m
+ #portfolio-section .portfolio-container{[m
+ display: grid;[m
+[36m@@ -172,3 +171,79 @@[m [moverflow: hidden;[m
+   background-position: center center;[m
+   background-repeat: no-repeat;[m
+ }[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #portfolio-section .portfolio-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr;[m
+[32m+[m[32m  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;[m
+[32m+[m[32m  grid-gap: 10px;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image1{[m
+[32m+[m[32m    grid-column: 1/2;[m
+[32m+[m[32m    grid-row: 1/3;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image2{[m
+[32m+[m[32m    grid-column: 2/3;[m
+[32m+[m[32m    grid-row: 1/3;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image3{[m
+[32m+[m[32m    grid-column: 1/2;[m
+[32m+[m[32m    grid-row: 3/5;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image4{[m
+[32m+[m[32m    grid-column: 2/3;[m
+[32m+[m[32m    grid-row: 3/5;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image5{[m
+[32m+[m[32m    grid-column: 1/2;[m
+[32m+[m[32m    grid-row: 5/7;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image6{[m
+[32m+[m[32m    grid-column: 2/3;[m
+[32m+[m[32m    grid-row: 5/7;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image7{[m
+[32m+[m[32m    grid-column: 1/2;[m
+[32m+[m[32m    grid-row: 7/9;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  #portfolio-section .portfolio-container{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: 1fr 1fr;[m
+[32m+[m[32m  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;[m
+[32m+[m[32m  grid-gap: 10px;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image1{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 1/2;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image2{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 2/3;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image3{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 3/4;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image4{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 4/5;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image5{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 5/6;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image6{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 6/7;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #portfolio-section .portfolio-container .box.image7{[m
+[32m+[m[32m    grid-column: 1/4;[m
+[32m+[m[32m    grid-row: 7/8;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/services.css b/css/landing-page/services.css[m
+[1msimilarity index 70%[m
+[1mrename from css/services.css[m
+[1mrename to css/landing-page/services.css[m
+[1mindex 0cca8c1..c1b5f73 100644[m
+[1m--- a/css/services.css[m
+[1m+++ b/css/landing-page/services.css[m
+[36m@@ -42,9 +42,9 @@[m [mcursor: pointer;[m
+ }[m
+ #services .services-container .box:hover{[m
+   background: rgba(255,255,255,1);[m
+[31m-  -webkit-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[31m- -moz-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[31m-  box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.12);[m
+[32m+[m[32m  -webkit-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+[32m+[m[32m -moz-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+[32m+[m[32m  box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+ }[m
+ #services .services-container .box .fa{[m
+   font-size: 2rem;[m
+[36m@@ -73,3 +73,19 @@[m [mborder-bottom: 2px solid #ff5253;[m
+ #services .services-container .box.orange{[m
+ border-bottom: 2px solid #ffc853;[m
+ }[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #services .services-container{[m
+[32m+[m[32m    grid-template-columns: 100%;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #services .services-container .box{[m
+[32m+[m[32m    background: rgba(255,255,255,1);[m
+[32m+[m[32m    -webkit-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+[32m+[m[32m   -moz-box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+[32m+[m[32m    box-shadow: 0px 41px 74px 24px rgba(0,0,0,0.08);[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/top-section.css b/css/landing-page/top-section.css[m
+[1msimilarity index 68%[m
+[1mrename from css/top-section.css[m
+[1mrename to css/landing-page/top-section.css[m
+[1mindex cf83c0b..30fca0c 100644[m
+[1m--- a/css/top-section.css[m
+[1m+++ b/css/landing-page/top-section.css[m
+[36m@@ -49,13 +49,18 @@[m [mposition: relative;[m
+   text-transform: capitalize;[m
+   z-index: 1;[m
+ }[m
+[32m+[m[32m#top .info a:hover{[m
+[32m+[m[32m  color: red;[m
+[32m+[m[32m  font-size: 1.3rem;[m
+[32m+[m[32m}[m
+[32m+[m
+ #top .img{[m
+   width: 100%;[m
+   max-width: 500px;[m
+   height: 700px;[m
+ }[m
+ #top .img .background-img{[m
+[31m-  background: url('../img/shadow_man.png');[m
+[32m+[m[32m  background: url('../../img/shadow_man.png');[m
+   background-position: top center;[m
+   background-repeat: no-repeat;[m
+   background-size: cover;[m
+[36m@@ -63,3 +68,27 @@[m [mposition: relative;[m
+   max-width: 400px;[m
+   height: 800px;[m
+ }[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  #top .container{[m
+[32m+[m[32m    padding: 0 0 80px;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #top .info .blue-square{[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #top .img .background-img{[m
+[32m+[m[32m    height: 100vh;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  #top .container{[m
+[32m+[m[32m    padding: 0 0 80px;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #top .info .blue-square{[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  #top .img .background-img{[m
+[32m+[m[32m    height: 100vh;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/portfolio.css b/css/portfolio.css[m
+[1mindex 0c04d26..7e737f0 100644[m
+[1m--- a/css/portfolio.css[m
+[1m+++ b/css/portfolio.css[m
+[36m@@ -1,13 +1,122 @@[m
+[31m-@import "reset.css";[m
+[32m+[m[32m@import "/reset.css";[m
+ @import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext');[m
+[31m-@import "top-section.css";[m
+[31m-@import "services.css";[m
+[31m-@import "portfolio-section.css";[m
+[32m+[m[32m@import "/landing-page/top-section.css";[m
+[32m+[m[32m@import "/landing-page/services.css";[m
+[32m+[m[32m@import "/landing-page/portfolio-section.css";[m
+[32m+[m[32m@import "/landing-page/experience-section.css";[m
+[32m+[m[32m@import "/landing-page/blog.css";[m
+[32m+[m[32m@import "/landing-page/classTestimonials.css";[m
+[32m+[m[32m@import "/portfolio/portfolio-projects.css";[m
+[32m+[m[32m@import "/footer.css";[m
+[32m+[m
+ body{[m
+[31m-  background: #eeee;[m
+[32m+[m[32m  background: #ffff;[m
+ }[m
+ [m
+ .container{[m
+[31m-  max-width: 1200px;[m
+[32m+[m[32m  max-width: 1150px;[m
+   margin: 0 auto;[m
+ }[m
+[32m+[m
+[32m+[m[32mheader{[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  padding: 40px 20px;[m
+[32m+[m[32m  justify-content: space-between;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .logo{[m
+[32m+[m[32m  font-size: 1.5rem;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  color: white;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .logo .name{[m
+[32m+[m[32m  background: black;[m
+[32m+[m[32m  padding: 15px 20px;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  color: #ffff;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .header-menu{[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  display: flex;[m
+[32m+[m[32m  justify-content: center;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .header-menu a{[m
+[32m+[m[32m  font-size: 1rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  color: black;[m
+[32m+[m[32m  padding: 0 10px;[m
+[32m+[m[32m  transition: all .3s ease-in-out;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .header-menu a:hover{[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  color: #ff5253;[m
+[32m+[m[32m  border: 1px solid black;[m
+[32m+[m[32m}[m
+[32m+[m[32mheader .menu-btn{[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  color: #ff5253;[m
+[32m+[m[32m  font-size: 1.6rem;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  padding: 15px;[m
+[32m+[m[32m  display: none;[m
+[32m+[m[32m  cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m[32m.mobile-menu{[m
+[32m+[m[32m  background: #fff;[m
+[32m+[m[32m  display: none;[m
+[32m+[m[32m  flex-direction: column;[m
+[32m+[m[32m  padding: 40px 0;[m
+[32m+[m[32m  position: absolute;[m
+[32m+[m[32m  top: 0;[m
+[32m+[m[32m  height: 100vh;[m
+[32m+[m[32m  width: 50%;[m
+[32m+[m[32m  z-index: 10;[m
+[32m+[m[32m  transform: translate3d(-100%,0,0);[m
+[32m+[m[32m  transition: all .4s ease-in-out;[m
+[32m+[m[32m  -webkit-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);[m
+[32m+[m[32m  -moz-box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);[m
+[32m+[m[32m  box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);[m
+[32m+[m[32m}[m
+[32m+[m[32m.mobile-menu.active{[m
+[32m+[m[32m  transform: translate3d(0,0,0);[m
+[32m+[m[32m}[m
+[32m+[m[32m.mobile-menu a{[m
+[32m+[m[32m  padding: 15px;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  color: black;[m
+[32m+[m[32m}[m
+[32m+[m[32m.mobile-menu a:hover{[m
+[32m+[m[32m  padding: 15px 0;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  background: #ff5253;[m
+[32m+[m[32m  color: #fff;[m
+[32m+[m[32m}[m
+[32m+[m[32m.project-images{[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  height: 100%;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m@media only screen and (max-width: 960px){[m
+[32m+[m[32m  .container{width: 100%}[m
+[32m+[m[32m}[m
+[32m+[m[32m/*phones*/[m
+[32m+[m[32m@media only screen and (max-width: 767px){[m
+[32m+[m[32m  header .header-menu{[m
+[32m+[m[32m    display: none;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  header .menu-btn{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  header .logo{[m
+[32m+[m[32m    font-size: 1.3rem;[m
+[32m+[m[32m  }[m
+[32m+[m[32m  .mobile-menu{[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[1mdiff --git a/css/portfolio/portfolio-projects.css b/css/portfolio/portfolio-projects.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a689cca[m
+[1m--- /dev/null[m
+[1m+++ b/css/portfolio/portfolio-projects.css[m
+[36m@@ -0,0 +1,83 @@[m
+[32m+[m[32m#portfolio-projects{[m
+[32m+[m[32m  padding: 100px 15px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects h1{[m
+[32m+[m[32m  font-size: 4rem;[m
+[32m+[m[32m  font-weight: 600;[m
+[32m+[m[32m  font-style: italic;[m
+[32m+[m[32m  margin-bottom: 1.5rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .info .buttons{[m
+[32m+[m[32m  padding: 20px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .info .buttons a{[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m  padding: 10px 20px;[m
+[32m+[m[32m  border-radius: 3px;[m
+[32m+[m[32m  color: #fff;[m
+[32m+[m[32m  background: black;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  text-transform: capitalize;[m
+[32m+[m[32m  transition: all .3s ease-in-out;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .info .buttons .fa{[m
+[32m+[m[32m  color: #ff5253;[m
+[32m+[m[32m  padding-right: 10px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .info .buttons a:hover{[m
+[32m+[m[32m  background: #ff5253;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .info .buttons a:hover .fa{[m
+[32m+[m[32m  color: #000;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects p{[m
+[32m+[m[32m  display: inline-block;[m
+[32m+[m[32m  border-radius: 3px;[m
+[32m+[m[32m  color: #929294;[m
+[32m+[m[32m  font-size: 1.2rem;[m
+[32m+[m[32m  line-height: 1.7;[m
+[32m+[m[32m  margin-bottom: 1.8rem;[m
+[32m+[m[32m  text-decoration: none;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#portfolio-projects .technologies{[m
+[32m+[m[32m  padding: 100px 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects h3{[m
+[32m+[m[32m  font-size: 2rem;[m
+[32m+[m[32m  font-weight: 700;[m
+[32m+[m[32m  text-transform: uppercase;[m
+[32m+[m[32m  margin: 2rem 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .technologies .icons{[m
+[32m+[m[32m  display: grid;[m
+[32m+[m[32m  grid-template-columns: repeat(4, 1fr);[m
+[32m+[m[32m  grid-gap: 20px;[m
+[32m+[m[32m  align-items: center;[m
+[32m+[m[32m  justify-items: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .technologies .icons .icon{[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .technologies .icons .icon img{[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  max-width: 200px;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .video{[m
+[32m+[m[32m  text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m
+[32m+[m[32m#portfolio-projects .container .project-image{[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    margin-bottom: 3rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m#portfolio-projects .container .project-image .img{[m
+[32m+[m[32m  height: 450px;[m
+[32m+[m[32m  width: 100%;[m
+[32m+[m[32m  background-size: cover !important;[m
+[32m+[m[32m  background-position: center center !important;[m
+[32m+[m[32m  background-repeat: no-repeat !important;[m
+[32m+[m[32m  background-attachment: fixed !important;[m
+[32m+[m[32m}[m
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3b1a0e6[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,377 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="utf-8">[m
+[32m+[m[32m  <title>RandomSavage</title>[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, user-scalable=no">[m
+[32m+[m[32m  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">[m
+[32m+[m[32m  <link rel="stylesheet" href="css/portfolio.css">[m
+[32m+[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m[32m  <header>[m
+[32m+[m[32m    <div class="logo">[m
+[32m+[m[32m      <a href="index.html" class="name">Random Savage</a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="header-menu">[m
+[32m+[m[32m      <a href="/index.html">Home</a>[m
+[32m+[m[32m      <a href="/index.html#services">Services</a>[m
+[32m+[m[32m      <a href="/index.html#portfolio-section">Portfolio</a>[m
+[32m+[m[32m      <a href="/index.html#experience">Experience</a>[m
+[32m+[m[32m      <a href="/index.html#blog">Blog</a>[m
+[32m+[m[32m      <a href="/index.html#testimonial">Testimonials</a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="menu-btn">[m
+[32m+[m[32m      <i class="fa fa-bars" aria-hidden="true"></i>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </header>[m
+[32m+[m[32m<div class="mobile-menu active">[m
+[32m+[m[32m    <a href="/index.html">Home</a>[m
+[32m+[m[32m    <a href="/index.html#services">Services</a>[m
+[32m+[m[32m    <a href="/index.html#portfolio-section">Portfolio</a>[m
+[32m+[m[32m    <a href="/index.html#experience">Experience</a>[m
+[32m+[m[32m    <a href="/index.html#blog">Blog</a>[m
+[32m+[m[32m    <a href="/index.html#testimonial">Testimonials</a>[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m  <section id="top">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="info">[m
+[32m+[m[32m        <div class="blue-square">[m
+[32m+[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <h1>Random Savage</h1>[m
+[32m+[m[32m        <p>Freelance Web Developer</p>[m
+[32m+[m[32m        <a href="https://github.com/RandomSavage">Latest Works</a>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="img">[m
+[32m+[m[32m        <div class="background-img"></div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="services">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="circle"></div>[m
+[32m+[m[32m        <h1>Services</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="services-container">[m
+[32m+[m[32m        <div class="box blue">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-trophy" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>Best Quality</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="box red">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-fighter-jet" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>Fast Delivery</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="box orange">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <i class="fa fa-handshake-o" aria-hidden="true"></i>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <h5>User Friendly Design</h5>[m
+[32m+[m[32m          <p>Lorem ipsum</p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="portfolio-section">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="square"></div>[m
+[32m+[m[32m        <h1>Portfolio</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="portfolio-container">[m
+[32m+[m[32m        <a href="portfolio/project1.html" class="box image1">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image2">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image3">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image4">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image5">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image6">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <a href="portfolio/#" class="box image7">[m
+[32m+[m[32m          <div class="image">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="title">[m
+[32m+[m[32m                <div class="text">Ecommerce</div>[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="experience">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="large-title">Experience</div>[m
+[32m+[m[32m      <div class="experience-container">[m
+[32m+[m[32m        <div class="large-icons">[m
+[32m+[m[32m          <div class="square">[m
+[32m+[m[32m            <div class="blue-box">[m
+[32m+[m[32m              Experience[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="circle">[m
+[32m+[m[32m            <div class="white-box">[m
+[32m+[m[32m              Awards[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="triangle">[m
+[32m+[m[32m            <div class="triangle-box">[m
+[32m+[m[32m              <div class="text">[m
+[32m+[m[32m                Work[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="info">[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m
+[32m+[m[32m          <div class="info-box">[m
+[32m+[m[32m            <h4>Graphic Artist-Acme</h4>[m
+[32m+[m[32m            <span class="date">June 2017 - July 2018</span>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m            </p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="blog">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <h1>Blog</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="blog-container">[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m        <!--start of post-->[m
+[32m+[m[32m        <a href="blog/#" class="post">[m
+[32m+[m[32m          <div class="post-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fzone1.aqusagtechnologi.netdna-cdn.com%2Fwp-content%2Fuploads%2F2017%2F04%2FWeb-frameworks-2.jpg&f=1&nofb=1')"></div>[m
+[32m+[m[32m          <div class="details">[m
+[32m+[m[32m            <h4>Top Ten Techno Beefs</h4>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.[m
+[32m+[m[32m              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="more">[m
+[32m+[m[32m            <div class="button">[m
+[32m+[m[32m              Read More[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </a>[m
+[32m+[m[32m        <!--end of post-->[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <section id="testimonial">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="title">[m
+[32m+[m[32m        <div class="square"></div>[m
+[32m+[m[32m        <h1>Testimonials</h1>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="testimonial-container">[m
+[32m+[m[32m        <div class="test-sides test-left">[m
+[32m+[m[32m          <div class="person-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.charlie-bruzzese.com%2Fwordpress%2Fwp-content%2Fuploads%2F2015%2F07%2FCouple-Loves-Coffee-by-Ed-Yourdon2.png&f=1&nofb=1')">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="name">[m
+[32m+[m[32m                George & Heather[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="test-center">[m
+[32m+[m[32m          <div class="header">[m
+[32m+[m[32m            <div class="user-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fintrovertedalpha.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fhow-to-date-intelligent-women-introverted-alpha.jpg')">[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m            <div class="info">[m
+[32m+[m[32m              <h4>Ellas Mujeiras</h4>[m
+[32m+[m[32m              <span>Project Manager, Site Architect</span>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <p>[m
+[32m+[m[32m            Magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.[m
+[32m+[m[32m          </p>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m        <div class="test-sides test-right">[m
+[32m+[m[32m          <div class="person-img" style="background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cadrenderstore.com%2Fwp-content%2Fuploads%2F2018%2F01%2FCR_Work_Bobby_Standing_004.png&f=1&nofb=1')">[m
+[32m+[m[32m            <div class="hover-bg">[m
+[32m+[m[32m              <div class="name">[m
+[32m+[m[32m                Rickson Jamwell[m
+[32m+[m[32m              </div>[m
+[32m+[m[32m            </div>[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m[32m  <footer>[m
+[32m+[m[32m    <div class="social-container">[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-amazon" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-free-code-camp" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-github-alt" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i  class="fa fa-slack" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <h5>RandomSavage</h5>[m
+[32m+[m[32m    <h6>Freelance Web Developer</h6>[m
+[32m+[m[32m  </footer>[m
+[32m+[m[32m  <script src="/js/app.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+[1mdiff --git a/js/app.js b/js/app.js[m
+[1mnew file mode 100644[m
+[1mindex 0000000..661e753[m
+[1m--- /dev/null[m
+[1m+++ b/js/app.js[m
+[36m@@ -0,0 +1,10 @@[m
+[32m+[m[32mconst menuBtn = document.getElementsByClassName('menu-btn');[m
+[32m+[m[32mconst mobileMenu = document.getElementsByClassName('mobile-menu');[m
+[32m+[m
+[32m+[m[32mconst clickedBtn = ()=> {[m
+[32m+[m[32m  mobileMenu[0].classList.toggle('active');[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mmenuBtn[0].addEventListener('click', clickedBtn);[m
+[32m+[m
+[32m+[m[32mconsole.log(menuBtn[0]);[m
+[1mdiff --git a/js/portfolio.js b/js/portfolio.js[m
+[1mdeleted file mode 100644[m
+[1mindex e69de29..0000000[m
+[1mdiff --git a/portfolio.html b/portfolio.html[m
+[1mdeleted file mode 100644[m
+[1mindex 607df5e..0000000[m
+[1m--- a/portfolio.html[m
+[1m+++ /dev/null[m
+[36m@@ -1,135 +0,0 @@[m
+[31m-<!DOCTYPE html>[m
+[31m-<html>[m
+[31m-[m
+[31m-<head>[m
+[31m-  <meta charset="utf-8">[m
+[31m-  <title>RandomSavage</title>[m
+[31m-  <meta name="viewport" content="width=device-width, initial-scale=1">[m
+[31m-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">[m
+[31m-  <link rel="stylesheet" href="css/portfolio.css">[m
+[31m-[m
+[31m-</head>[m
+[31m-[m
+[31m-<body>[m
+[31m-  <section id="top">[m
+[31m-    <div class="container">[m
+[31m-      <div class="info">[m
+[31m-        <div class="blue-square">[m
+[31m-[m
+[31m-        </div>[m
+[31m-        <h1>Random Savage</h1>[m
+[31m-        <p>Freelance Web Developer</p>[m
+[31m-        <a href="https://github.com/RandomSavage">Latest Works</a>[m
+[31m-      </div>[m
+[31m-      <div class="img">[m
+[31m-        <div class="background-img"></div>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  </section>[m
+[31m-  <section id="services">[m
+[31m-    <div class="container">[m
+[31m-      <div class="title">[m
+[31m-        <div class="circle"></div>[m
+[31m-        <h1>Services</h1>[m
+[31m-      </div>[m
+[31m-      <div class="services-container">[m
+[31m-        <div class="box blue">[m
+[31m-          <div class="icon">[m
+[31m-            <i class="fa fa-trophy" aria-hidden="true"></i>[m
+[31m-          </div>[m
+[31m-          <h5>Best Quality</h5>[m
+[31m-          <p>Lorem ipsum</p>[m
+[31m-        </div>[m
+[31m-        <div class="box red">[m
+[31m-          <div class="icon">[m
+[31m-            <i class="fa fa-fighter-jet" aria-hidden="true"></i>[m
+[31m-          </div>[m
+[31m-          <h5>Fast Delivery</h5>[m
+[31m-          <p>Lorem ipsum</p>[m
+[31m-        </div>[m
+[31m-        <div class="box orange">[m
+[31m-          <div class="icon">[m
+[31m-            <i class="fa fa-handshake-o" aria-hidden="true"></i>[m
+[31m-          </div>[m
+[31m-          <h5>User Friendly Design</h5>[m
+[31m-          <p>Lorem ipsum</p>[m
+[31m-        </div>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  </section>[m
+[31m-  <section id="portfolio-section">[m
+[31m-    <div class="container">[m
+[31m-      <div class="title">[m
+[31m-        <div class="square"></div>[m
+[31m-        <h1>Portfolio</h1>[m
+[31m-      </div>[m
+[31m-      <div class="portfolio-container">[m
+[31m-        <a href="portfolio/#" class="box image1">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-        <a href="portfolio/#" class="box image2">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-        <a href="portfolio/#" class="box image3">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-        <a href="portfolio/#" class="box image4">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-        <a href="portfolio/#" class="box image5">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-      </a>[m
+[31m-        <a href="portfolio/#" class="box image6">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-        <a href="portfolio/#" class="box image7">[m
+[31m-          <div class="image">[m
+[31m-            <div class="hover-bg">[m
+[31m-              <div class="title">[m
+[31m-                <div class="text">Ecommerce</div>[m
+[31m-              </div>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </a>[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  </section>[m
+[31m-</body>[m
+[31m-[m
+[31m-</html>[m
+[1mdiff --git a/portfolio/project1.html b/portfolio/project1.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b052271[m
+[1m--- /dev/null[m
+[1m+++ b/portfolio/project1.html[m
+[36m@@ -0,0 +1,100 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m
+[32m+[m[32m<head>[m
+[32m+[m[32m  <meta charset="utf-8">[m
+[32m+[m[32m  <title>RandomSavage</title>[m
+[32m+[m[32m  <meta name="viewport" content="width=device-width, user-scalable=no">[m
+[32m+[m[32m  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">[m
+[32m+[m[32m  <link rel="stylesheet" href="/../css/portfolio.css">[m
+[32m+[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<body>[m
+[32m+[m[32m  <header>[m
+[32m+[m[32m    <div class="logo">[m
+[32m+[m[32m      <a href="../index.html" class="name">Random Savage</a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="header-menu">[m
+[32m+[m[32m      <a href="/../index.html">Home</a>[m
+[32m+[m[32m      <a href="/../index.html#services">Services</a>[m
+[32m+[m[32m      <a href="/../index.html#portfolio-section">Portfolio</a>[m
+[32m+[m[32m      <a href="/../index.html#experience">Experience</a>[m
+[32m+[m[32m      <a href="/../index.html#blog">Blog</a>[m
+[32m+[m[32m      <a href="/../index.html#testimonial">Testimonials</a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div class="menu-btn">[m
+[32m+[m[32m      <i class="fa fa-bars" aria-hidden="true"></i>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </header>[m
+[32m+[m[32m  <div class="mobile-menu active">[m
+[32m+[m[32m    <a href="/../index.html">Home</a>[m
+[32m+[m[32m    <a href="/../index.html#services">Services</a>[m
+[32m+[m[32m    <a href="/../index.html#portfolio-section">Portfolio</a>[m
+[32m+[m[32m    <a href="/../index.html#experience">Experience</a>[m
+[32m+[m[32m    <a href="/../index.html#blog">Blog</a>[m
+[32m+[m[32m    <a href="/../index.html#testimonial">Testimonials</a>[m
+[32m+[m[32m  </div>[m
+[32m+[m[32m  <section id="portfolio-projects">[m
+[32m+[m[32m    <div class="container">[m
+[32m+[m[32m      <div class="project-image">[m
+[32m+[m[32m        <div class="img" style="background: url('https://smartlinkup.com/wp-content/uploads/2016/10/amazon-product-optimization-tips.jpg')">[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <h1>Nike Project</h1>[m
+[32m+[m[32m      <div class="info">[m
+[32m+[m[32m        <div class="buttons">[m
+[32m+[m[32m          <a href="#"><i class="fa fa-desktop"></i>View Project</a>[m
+[32m+[m[32m          <a href="#"><i class="fa fa-code"></i>View Code</a>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis[m
+[32m+[m[32m        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis[m
+[32m+[m[32m        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>[m
+[32m+[m[32m      <div class="technologies">[m
+[32m+[m[32m        <h3>Technologies</h3>[m
+[32m+[m[32m        <div class="icons">[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fuserlogos.org%2Ffiles%2Flogos%2Fmacleod.mac%2Famazon.u.png&f=1&nofb=1">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fuserlogos.org%2Ffiles%2Flogos%2Fmacleod.mac%2Famazon.u.png&f=1&nofb=1">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fuserlogos.org%2Ffiles%2Flogos%2Fmacleod.mac%2Famazon.u.png&f=1&nofb=1">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m          <div class="icon">[m
+[32m+[m[32m            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fuserlogos.org%2Ffiles%2Flogos%2Fmacleod.mac%2Famazon.u.png&f=1&nofb=1">[m
+[32m+[m[32m          </div>[m
+[32m+[m[32m        </div>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m      <div class="video">[m
+[32m+[m[32m        <h3>Video Walkthrough</h3>[m
+[32m+[m[32m        <iframe width="560" height="315" src="https://www.youtube.com/embed/DfeJxQusPBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>[m
+[32m+[m[32m      </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m  </section>[m
+[32m+[m
+[32m+[m[32m  <footer>[m
+[32m+[m[32m    <div class="social-container">[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-amazon" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-free-code-camp" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-github-alt" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m      <a href="#">[m
+[32m+[m[32m        <i class="fa fa-slack" aria-hidden="true"></i>[m
+[32m+[m[32m      </a>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <h5>RandomSavage</h5>[m
+[32m+[m[32m    <h6>Freelance Web Developer</h6>[m
+[32m+[m[32m  </footer>[m
+[32m+[m[32m  <script src="/../js/app.js"></script>[m
+[32m+[m[32m</body>[m
+[32m+[m
+[32m+[m[32m</html>[m

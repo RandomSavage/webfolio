@@ -1,0 +1,145 @@
+#testamonial{
+
+}
+#testamonial .container{
+
+}
+#testamonial .container .title{
+  font-size: 2.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  letter-spacing: 4px;
+}
+#testamonial .container .title .square{
+  position: absolute;
+  top: 23;
+  width: 150px;
+  height: 150px;
+  background-color: rgba(103,103,103,.5);
+}
+#testamonial .container .title h1{
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+}
+#testamonial .container .testamonial-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-gap: 40px;
+  width: 100%;
+  color: #16171b;
+}
+#testamonial .container .testamonial-container .box{
+  background: #ffff;
+  display: block;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: line-through;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+#testamonial .container .testamonial-container .box.t1{
+  grid-column: 1/2;
+  grid-row: 1/5;
+}
+#testamonial .container .testamonial-container .box.t1 .image{
+  background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.charlie-bruzzese.com%2Fwordpress%2Fwp-content%2Fuploads%2F2015%2F07%2FCouple-Loves-Coffee-by-Ed-Yourdon2.png&f=1&nofb=1');
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#testamonial .container .testamonial-container .box.t2{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+#testamonial .container .testamonial-container .box.t2 .image{
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fintrovertedalpha.com%2Fwp-content%2Fuploads%2F2016%2F01%2Fhow-to-date-intelligent-women-introverted-alpha.jpg&f=1&nofb=1');
+  text-decoration: none;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  }
+
+#testamonial .container .testamonial-container .t3{
+  text-decoration: none;
+  color: #16171b;
+}
+#testamonial .container .testamonial-container .t4{
+
+}
+#testamonial .container .testamonial-container .box.t4{
+  grid-column: 4/5;
+  grid-row: 1/5;
+}
+#testamonial .container .testamonial-container .box.t4 .image{
+  background: url('https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.cadrenderstore.com%2Fwp-content%2Fuploads%2F2018%2F01%2FCR_Work_Bobby_Standing_004.png&f=1&nofb=1');
+  text-decoration: none;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#testamonial .container .testamonial-container .box.t5{
+  grid-column: 2/4;
+  grid-row: 2/5;
+}
+#testamonial .container .testamonial-container .box.t5 .paragraph p{
+padding: 15px;
+letter-spacing: 3px;
+line-height: 1.5;
+color: #16171b;
+}
+/*Tablet*/
+@media only screen and (max-width: 960px){
+  #testimonial .container .testimonial-container {
+    display: grid;
+    grid-template-columns: 12% 76% 12%;
+    grid-gap: 0px;
+    padding: 100px 0;
+}
+}
+/*phones*/
+@media only screen and (max-width: 767px){
+  #testimonial .container .testimonial-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 0px;
+    padding: 100px 0;
+  }
+#testimonial .container .testimonial-container .test-sides.test-left{
+  grid-column: 1/2;
+  grid-row: 1/2;
+
+}
+#testimonial .container .testimonial-container .test-sides.test-right{
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+}
+#testimonial .container .testimonial-container .test-sides.test-right .person-img{
+  background-position: top left !important;
+}
+#testimonial .container .testimonial-container .test-center{
+  grid-column: 1/3;
+  grid-row: 2/3;
+  padding: 20px;
+}
+#testimonial .container .testimonial-container .test-center p{
+  font-size: 1rem;
+}
+}

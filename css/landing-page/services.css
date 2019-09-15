@@ -89,19 +89,3 @@ border-bottom: 2px solid #ffc853;
 @media only screen and (max-width: 767px){
 
 }
-
-#services .services-container .box p{
-  color: #b3b3b3;
-  line-height: 1.5;
-  font-size: .8rem;
-}
-
-#services .services-container .box.blue{
-border-bottom: 2px solid #52b8ff;
-}
-#services .services-container .box.red{
-border-bottom: 2px solid #ff5253;
-}
-#services .services-container .box.orange{
-border-bottom: 2px solid #ffc853;
-}
