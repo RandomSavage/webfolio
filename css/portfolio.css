@@ -119,7 +119,7 @@ header .menu-btn{
   .mobile-menu{
     display: none;
   }
-  .mobile-menu .active{
+  .mobile-menu.active{
     display: flex;
   }
 }
