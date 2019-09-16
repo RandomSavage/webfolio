@@ -12,6 +12,6 @@ console.log(mobileMenu[0]);*/
 
 
 const menuBtn = document.querySelector('.menu-btn');
-const mobileMenu = document.querySelector('.active');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-menuBtn.onclick = () => mobileMenu.classList.toggle('mobile-menu');
+menuBtn.onclick = () => mobileMenu.classList.toggle('active');
