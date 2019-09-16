@@ -117,10 +117,7 @@ header .menu-btn{
     font-size: 1.3rem;
   }
   .mobile-menu{
-    display: none;
-    transform: translate3d(-100%,0,0);
+
   }
-  .mobile-menu.active{
-    transform: translate3d(0,0,0);
-  }
+
 }
