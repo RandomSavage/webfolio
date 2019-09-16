@@ -118,8 +118,9 @@ header .menu-btn{
   }
   .mobile-menu{
     display: none;
+    transform: translate3d(-100%,0,0);
   }
   .mobile-menu.active{
-    display: flex;
+    transform: translate3d(0,0,0);
   }
 }
