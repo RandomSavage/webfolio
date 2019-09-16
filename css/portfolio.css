@@ -84,7 +84,7 @@ header .menu-btn{
   box-shadow: 2px 0px 78px -15px rgba(0,0,0,0.75);
 }
 .mobile-menu.active{
-  transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0) !important;
 }
 .mobile-menu a{
   padding: 15px;
@@ -116,8 +116,6 @@ header .menu-btn{
   header .logo{
     font-size: 1.3rem;
   }
-  .mobile-menu a{
 
-  }
 
 }
