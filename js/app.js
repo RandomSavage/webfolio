@@ -8,3 +8,12 @@ const clickedBtn = ()=> {
 menuBtn[0].addEventListener('click', clickedBtn);
 
 console.log(menuBtn[0]);
+
+function myFunction() {
+  var x = document.getElementById("bam");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
