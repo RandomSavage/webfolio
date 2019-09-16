@@ -1,4 +1,4 @@
-const menuBtn = document.getElementsByClassName('menu-btn');
+/*const menuBtn = document.getElementsByClassName('menu-btn');
 const mobileMenu = document.getElementsByClassName('mobile-menu');
 
 const clickedBtn = ()=> {
@@ -8,4 +8,10 @@ const clickedBtn = ()=> {
 
 menuBtn[0].addEventListener('click', clickedBtn);
 
-console.log(mobileMenu[0]);
+console.log(mobileMenu[0]);*/
+
+
+const menuBtn = document.querySelector('.menu-btn');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+menuBtn.onclick = () => mobileMenu.classList.toggle('active');
