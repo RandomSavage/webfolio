@@ -88,6 +88,13 @@
 /*phones*/
 @media only screen and (max-width: 767px){
   #portfolio-projects .info .buttons{
+    text-align: center;
+  }
+  #portfolio-projects .info .buttons a{
+    display: grid;
+    margin-bottom: 10px;
+  }
+  #portfolio-projects .info .buttons{
     display: inline-block;
     justify-content: center;
     margin: 20px;
