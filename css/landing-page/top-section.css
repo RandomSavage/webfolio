@@ -45,13 +45,13 @@ position: relative;
   font-weight: 700;
   text-decoration: none;
   padding-bottom: 5px;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid black;
   text-transform: capitalize;
   z-index: 1;
 }
 #top .info a:hover{
   color: red;
-  font-size: 1.3rem;
+  font-size: .9rem;
 }
 
 #top .img{

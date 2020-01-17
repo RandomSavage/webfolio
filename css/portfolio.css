@@ -1,5 +1,5 @@
 @import "./reset.css";
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,700&display=swap');
 @import "./landing-page/top-section.css";
 @import "./landing-page/services.css";
 @import "./landing-page/portfolio-section.css";
@@ -51,10 +51,11 @@ header .header-menu a{
   color: black;
   padding: 0 10px;
   transition: all .3s ease-in-out;
+  border: 1px solid white;
 }
 header .header-menu a:hover{
-  font-weight: 700;
-  color: #ff5253;
+  /* font-weight: 700; */
+  color: black;
   border: 1px solid black;
 }
 header .menu-btn{
