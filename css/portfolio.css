@@ -10,7 +10,10 @@
 @import "./footer.css";
 
 body{
-  background: purple;
+  background: rgb(57,27,99); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(57,27,99,1) 46%, rgba(44,83,158,1) 91%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(57,27,99,1) 46%,rgba(44,83,158,1) 91%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(57,27,99,1) 46%,rgba(44,83,158,1) 91%);
 }
 
 .container{
@@ -35,28 +38,36 @@ header .logo .name{
   padding: 15px 20px;
   text-decoration: none;
   color: #ffff;
+  border-radius: 3px;
 }
 header .header-menu{
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 header .header-menu a{
+  margin: 0 5px;
   font-size: 1rem;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  padding: 0 10px;
+  padding: 10px;
   transition: all .3s ease-in-out;
   border: 1px solid white;
+  border-radius: 3px;
+  transition: 2s;
+
 }
 header .header-menu a:hover{
   /* font-weight: 700; */
-  color: black;
+  color: #fff;
   border: 1px solid black;
+  background: rgba(0,0,0,.3);
+  -webkit-box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
+  -moz-box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
+  box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
 }
 header .menu-btn{
   font-weight: 700;
@@ -118,6 +129,11 @@ header .menu-btn{
   }
   header .menu-btn{
     display: flex;
+    color: #fff;
+  }
+  header .menu-btn .fa-bars{
+
+    color: #fff;
   }
   header .logo{
     font-size: 1.3rem;

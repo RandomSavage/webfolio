@@ -9,7 +9,7 @@ align-items: center;
 }
 #top .info{
 padding: 15px;
-margin: 0 auto;
+/* position: relative; */
 
 }
 #top .blue-square{
@@ -42,7 +42,6 @@ margin: 0 auto;
     position: relative;
     color: #919191;
     text-transform: capitalize;
-    text-align: center;
     margin-bottom: 4rem;
     z-index: 1;
     letter-spacing: 2px;
@@ -59,17 +58,10 @@ margin: 0 auto;
   border-bottom: 2px solid black;
   text-transform: capitalize;
   z-index: 1;
-  transition: 0.5s;
 }
 #top .info a:hover{
   color: red;
   font-size: .9rem;
-  background: rgba(0,0,0,.5);
-}
-#top .info .small-nav{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 #top .img{
@@ -85,13 +77,8 @@ margin: 0 auto;
   width: 100%;
   max-width: 400px;
   height: 800px;
-  transition: 2s;
 }
-#top .img .background-img:hover{
-  -webkit-box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
-  -moz-box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
-  box-shadow: -1px 1px 5px 0px rgba(219,216,219,1);
-}
+
 @media only screen and (max-width: 960px){
   #top .container{
     padding: 0 0 80px;
@@ -107,50 +94,9 @@ margin: 0 auto;
 @media only screen and (max-width: 767px){
   #top .container{
     padding: 0 0 80px;
-    display: grid;
-    grid-template-columns: 1fr;
   }
-  #top .blue-square{
-    margin: 20px auto;
-  }
-  #top .info{
-  padding: 15px;
-  margin: 20px auto;
-
-  }
-  #top .info h1{
-    position: relative;
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #16171b;
-    margin-bottom: 2rem;
-    z-index: 1;
-  }
-  #top .info p{
-      position: relative;
-      color: #919191;
-      text-transform: capitalize;
-      text-align: center;
-      margin-bottom: 2rem;
-      z-index: 1;
-      letter-spacing: 2px;
-  }
-  #top .info .small-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #top .info a{
-    color: #16171b;
-    font-size: .9rem;
-    font-weight: 700;
-    text-decoration: none;
-    margin: 0 0 20px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid black;
-    text-transform: capitalize;
-    z-index: 1;
+  #top .info .blue-square{
+    display: none;
   }
   #top .img .background-img{
     height: 100vh;
