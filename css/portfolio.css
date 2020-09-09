@@ -79,6 +79,9 @@ header .menu-btn{
   display: none;
   cursor: pointer;
 }
+header .menu-btn:hover{
+  transform: rotate(90deg);
+}
 .mobile-menu{
   background: #fff;
   display: none;
